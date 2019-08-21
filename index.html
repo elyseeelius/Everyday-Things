@@ -6,19 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Creating a Responsive Web Design</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css"> -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/print.css">
 </head>
 
 <body>
 	<div id="page">
 		<header>
-			
+
 			<a class="logo" href="http://codifydesign.com" title="Everyday Things"><span>Everyday Things</span></a>
 			<div class="hero">
 				<h1>Add interest with natural textures</h1>
-				<a class="btn" href="#" title="Get advice from top designers">Get advice from top designers</a>
+				<a class="btn" href="#" title="Get advice from top designers">Get advice <span> from top designers</span></a>
 			</div>
 		</header>
+
 		<section class="main">
 			<aside>
 				<div class="content trending">
@@ -36,10 +38,12 @@
 				</div>
 			</aside>
 			<aside>
-				<div class="content tools"></div>
-				<h3><a href="#">Tools of the trade</a></h3>
-				<p>Nullam sit amet enim. Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Morbi commodo, ipsum
-					sed pharetra gravida, orci rhoncus neque, id pulvinar odio.</p>
+				<div class="content tools">
+					<h3><a href="#">Tools of the trade</a></h3>
+					<p>Nullam sit amet enim. Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Morbi commodo,
+						ipsum
+						sed pharetra gravida, orci rhoncus neque, id pulvinar odio.</p>
+				</div>
 			</aside>
 		</section>
 		<section class="atmosphere">
@@ -80,7 +84,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#" title="About Us">About Us</a>
+					<a href="#" aria-haspopup="true" title="About Us">About Us</a>
 					<ul>
 						<li>
 							<a title="Sub Link 1" href="#">Sub link 1</a>
@@ -91,37 +95,37 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" title="Design Corner">Design Corner</a>
+					<a href="#" aria-haspopup="true" title="Design Corner">Design Corner</a>
 					<ul>
-							<li>
-								<a title="Sub Link 1" href="#">Sub link 1</a>
-							</li>
-							<li>
-								<a title="Sub Link 2" href="#">Sub link 2</a>
-							</li>
-							<li>
-									<a title="Sub Link 2" href="#">Sub link 3</a>
-									<ul>
-											<li>
-												<a title="Sub Link 1" href="#">Sub link 1</a>
-											</li>
-											<li>
-												<a title="Sub Link 2" href="#">Sub link 2</a>
-											</li>
-										</ul>
+						<li>
+							<a title="Sub Link 1" href="#">Sub link 1</a>
+						</li>
+						<li>
+							<a title="Sub Link 2" href="#">Sub link 2</a>
+						</li>
+						<li>
+							<a title="Sub Link 2" aria-haspopup="true" href="#">Sub link 3</a>
+							<ul>
+								<li>
+									<a title="Sub Link 1" href="#">Sub link 1</a>
 								</li>
-						</ul>
+								<li>
+									<a title="Sub Link 2" href="#">Sub link 2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="#" title="Products">Products</a>
+					<a href="#" aria-haspopup="true" title="Products">Products</a>
 					<ul>
-							<li>
-								<a title="Sub Link 1" href="#">Sub link 1</a>
-							</li>
-							<li>
-								<a title="Sub Link 2" href="#">Sub link 2</a>
-							</li>
-						</ul>
+						<li>
+							<a title="Sub Link 1" href="#">Sub link 1</a>
+						</li>
+						<li>
+							<a title="Sub Link 2" href="#">Sub link 2</a>
+						</li>
+					</ul>
 				</li>
 				<li>
 					<a href="#" title="Contact Us">Contact Us</a>
